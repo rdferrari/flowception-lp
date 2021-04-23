@@ -18,16 +18,8 @@ const HeaderContainer = styled.div`
 `;
 
 const Logo = styled.img`
-  margin: 10px;
+  margin-left: -3px;
   width: 185px;
-
-  // @media only screen and (min-width: 768px) {
-  //   margin: 20px 60px;
-  // }
-
-  // @media only screen and (min-width: 1200px) {
-  //   margin: 20px 100px;
-  // }
 `;
 
 const CenterBox = styled.div`
@@ -43,12 +35,23 @@ const ContentContainer = styled.div`
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
   }
 
   @media only screen and (min-width: 1200px) {
     margin: 80px 100px;
-    width: 1000px;
+  }
+`;
+
+const Box = styled.div`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+  @media only screen and (min-width: 768px) {
+    width: 50%;
   }
 `;
 
@@ -95,23 +98,27 @@ function Header() {
     <div>
       <HeaderBackground atl="Header background" src="/header-background.svg" />
       <HeaderContainer>
-        <Logo atl="Logo" src="/logo-flow.svg" />
+        {/* <Logo atl="Logo" src="/logo-flow.svg" /> */}
         <CenterBox>
           <ContentContainer>
-            <div>
-              <Title>
-                Crafting digital <br />
-                experiences.
-              </Title>
-              <Tagline>
-                Flowception is the flow of perceptions about my software
-                engineering, designer and researcher experience.{" "}
-              </Tagline>
-              <img atl="Let´s chat?" src="/bt-lets-chat.svg" />
-            </div>
-            <div>
+            <Box>
+              <div>
+                <Logo atl="Logo" src="/logo-flow.svg" />
+                <Title>
+                  Crafting digital <br />
+                  experiences.
+                </Title>
+                <Tagline>
+                  Flowception is the flow of perceptions about my software
+                  engineering, designer and researcher experience.{" "}
+                </Tagline>
+                <img atl="Let´s chat?" src="/bt-lets-chat.svg" />
+              </div>
+            </Box>
+
+            <Box>
               <Partners atl="Partners" src="/partners.png" />
-            </div>
+            </Box>
           </ContentContainer>
         </CenterBox>
       </HeaderContainer>
