@@ -21,7 +21,7 @@ function App() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
-      <Footer atl="Flow logo" src="/footer.svg" />
+      <Footer alt="Flow logo" src="/footer.svg" />
     </div>
   );
 }

@@ -147,15 +147,15 @@ function SectionThree() {
             researcher
           </Title>
           <Text>
-            Transforming ideas into reality, starting by defining the goals and
-            building a roadmap to the best possible solution.
+            Transforming ideas into reality. Defining the goals and building a
+            roadmap to the best possible solution.
             <br />
             <br />
             Planning and producing digital media content - video, photo, 360
             content, maps.
           </Text>
           <BtContainer>
-            <img atl="Github?" src="/bt-explore.svg" />
+            <img alt="Github?" src="/bt-explore.svg" />
           </BtContainer>
         </Box>
         <VideoContainer>

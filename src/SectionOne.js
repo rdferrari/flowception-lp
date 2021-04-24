@@ -149,13 +149,13 @@ function SectionOne() {
             Building React applications that are efficient, flexible and easy to
             maintain.
             <br /> <br />
-            Architecting serverless backend solutions to offer the best
-            experience for your product, integrating and evolving existing
-            systems, or building a custom solution from-scratch.
+            Architecting serverless backend solutions, which offer the best
+            experience for your product. Integrating and evolving existing
+            systems, or building a custom solution from scratch.
           </Text>
           <BtContainer>
             <a href="https://github.com/rdferrari" target="Blank">
-              <img atl="Github?" src="/bt-git.svg" />
+              <img alt="Github?" src="/bt-git.svg" />
             </a>
           </BtContainer>
         </Box>

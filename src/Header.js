@@ -94,7 +94,7 @@ function Header() {
         <ContentContainer>
           <Box>
             <div>
-              <Logo atl="" src="/logo-flow.svg" />
+              <Logo alt="" src="/logo-flow.svg" />
               <Title>
                 Crafting digital <br />
                 flow experiences
@@ -104,12 +104,12 @@ function Header() {
                 engineering, designer and researcher experience. Let´s chat?
               </Tagline>
 
-              <img atl="Let´s chat?" src="/bt-email.svg" />
+              <img alt="Let´s chat?" src="/bt-email.svg" />
             </div>
           </Box>
 
           <Box>
-            <Partners atl="Partners" src="/partners.png" />
+            <Partners alt="Partners" src="/partners.png" />
           </Box>
         </ContentContainer>
       </CenterBox>

@@ -161,7 +161,7 @@ function SectionTwo() {
             Your browser does not support HTML5 video.{" "}
           </VideoEl>
           <VideoMask></VideoMask>
-          <VideoMargin atl="Github?" src="/margin-video-two-bottom.svg" />
+          <VideoMargin alt="Github?" src="/margin-video-two-bottom.svg" />
         </VideoContainer>
 
         <Box>
@@ -170,13 +170,13 @@ function SectionTwo() {
             designer
           </Title>
           <Text>
-            Designing beautiful, easy-to-use mobile and web products that meet
-            your business and users needs. <br />
-            <br /> As a developer I ensure that my designs are technically
+            Designing easy-to-use mobile and web products that meet your
+            business and users needs. <br />
+            <br /> As a developer, I ensure that my designs are technically
             feasible within the constraints of the project.
           </Text>
           <BtContainer>
-            <img atl="Github?" src="/bt-explore.svg" />
+            <img alt="Github?" src="/bt-explore.svg" />
           </BtContainer>
         </Box>
       </ContentContainer>
