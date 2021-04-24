@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="37" viewBox="0 0 155 37">
+  <g id="Group_42" data-name="Group 42" transform="translate(-709 -1822)">
+    <text id="Explore" transform="translate(720 1845)" fill="#00d8ff" font-size="25" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="0" y="0">Explore</tspan></text>
+    <g id="Group_28" data-name="Group 28" transform="translate(699 1511)">
+      <line id="Line_4" data-name="Line 4" x2="145" transform="translate(10 343.5)" fill="none" stroke="#00d8ff" stroke-width="1"/>
+      <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(155 338)" fill="none" stroke="#00d8ff" stroke-width="1">
+        <circle cx="5" cy="5" r="5" stroke="none"/>
+        <circle cx="5" cy="5" r="4.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

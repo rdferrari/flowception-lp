@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const SectionContainer = styled.div`
-  margin-top: 650px;
+  margin-top: 0;
 
   @media only screen and (min-width: 768px) {
-    margin-top: 400px;
+    margin-top: 0;
   }
 
   @media only screen and (min-width: 1200px) {
-    margin-top: 600px;
+    margin-top: 0;
   }
 `;
 
@@ -67,7 +67,7 @@ const VideoEl = styled.video`
 `;
 
 const VideoMask = styled.div`
-  background-color: rgb(255, 0, 245, 0.3);
+  background-color: rgb(0, 216, 255, 0.5);
   width: 100%;
   height: 400px;
   position: relative;
@@ -133,32 +133,33 @@ const BtContainer = styled.div`
   }
 `;
 
-function SectionOne() {
+function SectionThree() {
   return (
     <SectionContainer>
       <MarginTop src="/margin-section-one-top.svg" />
       <ContentContainer>
         <Box>
           <Title>
-            Software <br />
-            engineering
+            Digital Media
+            <br />
+            researcher
           </Title>
           <Text>
-            Building React applications that are efficient, flexible and easy to
-            maintain. I also architect robust and scalable backend solutions to
-            offer the best experience for your product, integrating and evolving
-            existing systems, or building a custom solution from-scratch.
+            Transforming ideas into reality, starting by defining the goals and
+            building a roadmap to the best possible solution.
+            <br />
+            <br />
+            Planning and producing digital media content - video, photo, 360
+            content, maps.
           </Text>
           <BtContainer>
-            <a href="https://github.com/rdferrari" target="Blank">
-              <img atl="Github?" src="/bt-git.svg" />
-            </a>
+            <img atl="Github?" src="/bt-explore.svg" />
           </BtContainer>
         </Box>
         <VideoContainer>
           <VideoEl autoPlay loop muted playsInline>
             <source
-              src="https://flowceptionio8aa338f82a884000915b17c1e6ee133a194519-dev.s3-us-west-2.amazonaws.com/public/engineering.mp4"
+              src="https://flowceptionio8aa338f82a884000915b17c1e6ee133a194519-dev.s3-us-west-2.amazonaws.com/public/researcher.mp4"
               type="video/mp4"
             />{" "}
             Your browser does not support HTML5 video.{" "}
@@ -170,4 +171,4 @@ function SectionOne() {
   );
 }
 
-export default SectionOne;
+export default SectionThree;

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155" height="37" viewBox="0 0 155 37">
+  <g id="Group_41" data-name="Group 41" transform="translate(-8403 -1181)">
+    <text id="GitHub" transform="translate(8414 1204)" fill="#00d8ff" font-size="25" font-family="Ubuntu-Medium, Ubuntu" font-weight="500"><tspan x="0" y="0">GitHub</tspan></text>
+    <g id="Group_5" data-name="Group 5" transform="translate(8393 870)">
+      <line id="Line_4" data-name="Line 4" x2="145" transform="translate(10 343.5)" fill="none" stroke="#00d8ff" stroke-width="1"/>
+      <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(155 338)" fill="none" stroke="#00d8ff" stroke-width="1">
+        <circle cx="5" cy="5" r="5" stroke="none"/>
+        <circle cx="5" cy="5" r="4.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

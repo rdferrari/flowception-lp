@@ -2,19 +2,19 @@ import React from "react";
 import styled from "styled-components";
 
 const SectionContainer = styled.div`
-  margin-top: 650px;
+  margin-top: 0;
 
   @media only screen and (min-width: 768px) {
-    margin-top: 400px;
+    margin-top: 0;
   }
 
   @media only screen and (min-width: 1200px) {
-    margin-top: 600px;
+    margin-top: 0;
   }
 `;
 
 const ContentContainer = styled.div`
-  background-color: #1c1c1c;
+  background-color: white;
   display: flex;
   flex-direction: column;
 
@@ -26,22 +26,20 @@ const ContentContainer = styled.div`
 
 const Box = styled.div`
   align-items: center;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 60px 0;
+  margin-bottom: 60px;
   position: relative;
   width: 100%;
   z-index: 10;
 
   @media only screen and (min-width: 768px) {
-    margin-top: 60px;
     width: 50%;
   }
 
   @media only screen and (min-width: 1200px) {
-    margin-top: 120px;
   }
 `;
 
@@ -67,7 +65,7 @@ const VideoEl = styled.video`
 `;
 
 const VideoMask = styled.div`
-  background-color: rgb(255, 0, 245, 0.3);
+  background-color: rgb(255, 216, 0, 0.5);
   width: 100%;
   height: 400px;
   position: relative;
@@ -79,7 +77,9 @@ const VideoMask = styled.div`
 `;
 
 const MarginTop = styled.img`
+  margin-top: -90px;
   object-fit: cover;
+  height: 300px;
   position: absolute;
   width: 100%;
   z-index: 9;
@@ -133,41 +133,52 @@ const BtContainer = styled.div`
   }
 `;
 
-function SectionOne() {
+const VideoMargin = styled.img`
+  margin-top: -190px;
+  object-fit: cover;
+  height: 200px;
+  position: absolute;
+  width: 100%;
+  z-index: 9;
+
+  @media only screen and (min-width: 768px) {
+    width: 50%;
+  }
+`;
+function SectionTwo() {
   return (
     <SectionContainer>
-      <MarginTop src="/margin-section-one-top.svg" />
+      <MarginTop src="/margin-section-two-top.svg" />
       <ContentContainer>
-        <Box>
-          <Title>
-            Software <br />
-            engineering
-          </Title>
-          <Text>
-            Building React applications that are efficient, flexible and easy to
-            maintain. I also architect robust and scalable backend solutions to
-            offer the best experience for your product, integrating and evolving
-            existing systems, or building a custom solution from-scratch.
-          </Text>
-          <BtContainer>
-            <a href="https://github.com/rdferrari" target="Blank">
-              <img atl="Github?" src="/bt-git.svg" />
-            </a>
-          </BtContainer>
-        </Box>
         <VideoContainer>
           <VideoEl autoPlay loop muted playsInline>
             <source
-              src="https://flowceptionio8aa338f82a884000915b17c1e6ee133a194519-dev.s3-us-west-2.amazonaws.com/public/engineering.mp4"
+              src="https://flowceptionio8aa338f82a884000915b17c1e6ee133a194519-dev.s3-us-west-2.amazonaws.com/public/designer.mp4"
               type="video/mp4"
             />{" "}
             Your browser does not support HTML5 video.{" "}
           </VideoEl>
           <VideoMask></VideoMask>
+          <VideoMargin atl="Github?" src="/margin-video-two-bottom.svg" />
         </VideoContainer>
+
+        <Box>
+          <Title>
+            UI / UX <br />
+            designer
+          </Title>
+          <Text>
+            Designing beautiful, easy-to-use mobile and web products that meet
+            your business and users needs. Designing beautiful, easy-to-use
+            mobile and web products that meet your business and users needs.
+          </Text>
+          <BtContainer>
+            <img atl="Github?" src="/bt-explore.svg" />
+          </BtContainer>
+        </Box>
       </ContentContainer>
     </SectionContainer>
   );
 }
 
-export default SectionOne;
+export default SectionTwo;

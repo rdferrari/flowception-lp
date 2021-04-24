@@ -2,21 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 const SectionContainer = styled.div`
-  margin-top: 650px;
+  position: relative;
+  z-index: 8;
 
   @media only screen and (min-width: 768px) {
-    margin-top: 400px;
+    margin-top: 0;
   }
 
   @media only screen and (min-width: 1200px) {
-    margin-top: 600px;
+    margin-top: 0;
   }
 `;
 
 const ContentContainer = styled.div`
-  background-color: #1c1c1c;
+  background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
@@ -26,7 +27,7 @@ const ContentContainer = styled.div`
 
 const Box = styled.div`
   align-items: center;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,12 +37,12 @@ const Box = styled.div`
   z-index: 10;
 
   @media only screen and (min-width: 768px) {
-    margin-top: 60px;
+    margin-top: 100px;
     width: 50%;
   }
 
   @media only screen and (min-width: 1200px) {
-    margin-top: 120px;
+    margin-top: 160px;
   }
 `;
 
@@ -67,7 +68,7 @@ const VideoEl = styled.video`
 `;
 
 const VideoMask = styled.div`
-  background-color: rgb(255, 0, 245, 0.3);
+  background-color: rgb(255, 216, 0, 0.5);
   width: 100%;
   height: 400px;
   position: relative;
@@ -76,13 +77,6 @@ const VideoMask = styled.div`
   @media only screen and (min-width: 768px) {
     height: 700px;
   }
-`;
-
-const MarginTop = styled.img`
-  object-fit: cover;
-  position: absolute;
-  width: 100%;
-  z-index: 9;
 `;
 
 const Title = styled.h2`
@@ -123,51 +117,69 @@ const BtContainer = styled.div`
   width: 280px;
 
   @media only screen and (min-width: 768px) {
-    margin-left: 20px;
     width: 355px;
   }
 
   @media only screen and (min-width: 1200px) {
-    margin-left: 50px;
     width: 500px;
   }
 `;
 
-function SectionOne() {
+const PositionContainer = styled.div`
+  position: absolute;
+  width: 100%;
+`;
+
+const BottomContainer = styled.div`
+  position: relative;
+  right: 0;
+  width: 100%;
+  z-index: 9;
+`;
+
+const MarginBottom = styled.img`
+  margin-top: -300px;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+`;
+
+function SectionTwo() {
   return (
     <SectionContainer>
-      <MarginTop src="/margin-section-one-top.svg" />
-      <ContentContainer>
-        <Box>
-          <Title>
-            Software <br />
-            engineering
-          </Title>
-          <Text>
-            Building React applications that are efficient, flexible and easy to
-            maintain. I also architect robust and scalable backend solutions to
-            offer the best experience for your product, integrating and evolving
-            existing systems, or building a custom solution from-scratch.
-          </Text>
-          <BtContainer>
-            <a href="https://github.com/rdferrari" target="Blank">
-              <img atl="Github?" src="/bt-git.svg" />
-            </a>
-          </BtContainer>
-        </Box>
-        <VideoContainer>
-          <VideoEl autoPlay loop muted playsInline>
-            <source
-              src="https://flowceptionio8aa338f82a884000915b17c1e6ee133a194519-dev.s3-us-west-2.amazonaws.com/public/engineering.mp4"
-              type="video/mp4"
-            />{" "}
-            Your browser does not support HTML5 video.{" "}
-          </VideoEl>
-          <VideoMask></VideoMask>
-        </VideoContainer>
-      </ContentContainer>
+      <PositionContainer>
+        <ContentContainer>
+          <VideoContainer>
+            <VideoEl autoPlay loop muted playsInline>
+              <source
+                src="https://flowceptionio8aa338f82a884000915b17c1e6ee133a194519-dev.s3-us-west-2.amazonaws.com/public/engineering.mp4"
+                type="video/mp4"
+              />{" "}
+              Your browser does not support HTML5 video.{" "}
+            </VideoEl>
+            <VideoMask></VideoMask>
+          </VideoContainer>
+          <Box>
+            <Title>
+              UI / UX
+              <br />
+              Designer
+            </Title>
+            <Text>
+              Designing beautiful, easy-to-use mobile and web products that meet
+              your business and users needs.
+            </Text>
+            <BtContainer>
+              <img atl="Github?" src="/bt-explore.svg" />
+            </BtContainer>
+          </Box>
+        </ContentContainer>
+      </PositionContainer>
+      <BottomContainer>
+        <MarginBottom src="/margin-section-one-bottom.svg" />
+      </BottomContainer>
     </SectionContainer>
   );
 }
 
-export default SectionOne;
+export default SectionTwo;
