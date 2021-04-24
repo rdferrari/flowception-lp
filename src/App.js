@@ -7,10 +7,6 @@ import SectionOne from "./SectionOne";
 import SectionThree from "./SectionThree";
 import SectionTwo from "./SectionTwo";
 
-// const FooterContainer = styled.div`
-//   width: 100%;
-// `;
-
 const Footer = styled.img`
   right: 0;
   margin-top: -200px;
@@ -25,7 +21,6 @@ function App() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
-
       <Footer atl="Flow logo" src="/footer.svg" />
     </div>
   );

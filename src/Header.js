@@ -1,17 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const HeaderBackground = styled.img`
-  object-fit: cover;
-  height: 676px;
-  right: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  max-width: 1200px;
-  z-index: 10;
-`;
-
 const HeaderContainer = styled.div`
   left: 0;
   position: absolute;
@@ -100,34 +89,31 @@ const Partners = styled.img`
 
 function Header() {
   return (
-    <div>
-      {/* <HeaderBackground atl="Header background" src="/header-background.svg" /> */}
-      <HeaderContainer>
-        <CenterBox>
-          <ContentContainer>
-            <Box>
-              <div>
-                <Logo atl="Logo" src="/logo-flow.svg" />
-                <Title>
-                  Crafting digital <br />
-                  flow experiences
-                </Title>
-                <Tagline>
-                  Flowception is the flow of perceptions about my software
-                  engineering, designer and researcher experience. Let´s chat?
-                </Tagline>
+    <HeaderContainer>
+      <CenterBox>
+        <ContentContainer>
+          <Box>
+            <div>
+              <Logo atl="" src="/logo-flow.svg" />
+              <Title>
+                Crafting digital <br />
+                flow experiences
+              </Title>
+              <Tagline>
+                Flowception is the flow of perceptions about my software
+                engineering, designer and researcher experience. Let´s chat?
+              </Tagline>
 
-                <img atl="Let´s chat?" src="/bt-email.svg" />
-              </div>
-            </Box>
+              <img atl="Let´s chat?" src="/bt-email.svg" />
+            </div>
+          </Box>
 
-            <Box>
-              <Partners atl="Partners" src="/partners.png" />
-            </Box>
-          </ContentContainer>
-        </CenterBox>
-      </HeaderContainer>
-    </div>
+          <Box>
+            <Partners atl="Partners" src="/partners.png" />
+          </Box>
+        </ContentContainer>
+      </CenterBox>
+    </HeaderContainer>
   );
 }
 

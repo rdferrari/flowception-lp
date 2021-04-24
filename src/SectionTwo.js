@@ -86,6 +86,7 @@ const MarginTop = styled.img`
 `;
 
 const Title = styled.h2`
+  font-family: ubuntuBold;
   font-size: 32px;
   width: 280px;
 
@@ -103,6 +104,7 @@ const Title = styled.h2`
 `;
 
 const Text = styled.p`
+  font-family: ubuntuLight;
   font-size: 15px;
   width: 280px;
 
@@ -169,8 +171,9 @@ function SectionTwo() {
           </Title>
           <Text>
             Designing beautiful, easy-to-use mobile and web products that meet
-            your business and users needs. Designing beautiful, easy-to-use
-            mobile and web products that meet your business and users needs.
+            your business and users needs. <br />
+            <br /> As a developer I ensure that my designs are technically
+            feasible within the constraints of the project.
           </Text>
           <BtContainer>
             <img atl="Github?" src="/bt-explore.svg" />

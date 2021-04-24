@@ -86,6 +86,7 @@ const MarginTop = styled.img`
 `;
 
 const Title = styled.h2`
+  font-family: ubuntuBold;
   font-size: 32px;
   width: 280px;
 
@@ -103,6 +104,7 @@ const Title = styled.h2`
 `;
 
 const Text = styled.p`
+  font-family: ubuntuLight;
   font-size: 15px;
   width: 280px;
 
@@ -136,7 +138,7 @@ const BtContainer = styled.div`
 function SectionOne() {
   return (
     <SectionContainer>
-      <MarginTop src="/margin-section-one-top.svg" />
+      <MarginTop alt="Margin top" src="/margin-section-one-top.svg" />
       <ContentContainer>
         <Box>
           <Title>
@@ -145,9 +147,11 @@ function SectionOne() {
           </Title>
           <Text>
             Building React applications that are efficient, flexible and easy to
-            maintain. I also architect robust and scalable backend solutions to
-            offer the best experience for your product, integrating and evolving
-            existing systems, or building a custom solution from-scratch.
+            maintain.
+            <br /> <br />
+            Architecting serverless backend solutions to offer the best
+            experience for your product, integrating and evolving existing
+            systems, or building a custom solution from-scratch.
           </Text>
           <BtContainer>
             <a href="https://github.com/rdferrari" target="Blank">
