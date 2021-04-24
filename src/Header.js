@@ -2,18 +2,21 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderBackground = styled.img`
-  left: 0;
+  object-fit: cover;
+  height: 676px;
+  right: 0;
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: 1;
+  max-width: 1200px;
+  z-index: 10;
 `;
 
 const HeaderContainer = styled.div`
   left: 0;
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 11;
   width: 100%;
 `;
 
@@ -34,6 +37,7 @@ const ContentContainer = styled.div`
   flex-direction: column;
 
   @media only screen and (min-width: 768px) {
+    margin: 40px 60px;
     flex-direction: row;
     width: 100%;
   }
@@ -79,10 +83,11 @@ const Tagline = styled.p`
 `;
 
 const Partners = styled.img`
-  margin-top: 40px;
+  margin-top: 60px;
   width: 250px;
 
   @media only screen and (min-width: 768px) {
+    margin-top: 40px;
     width: 300px;
   }
 
@@ -96,9 +101,8 @@ const Partners = styled.img`
 function Header() {
   return (
     <div>
-      <HeaderBackground atl="Header background" src="/header-background.svg" />
+      {/* <HeaderBackground atl="Header background" src="/header-background.svg" /> */}
       <HeaderContainer>
-        {/* <Logo atl="Logo" src="/logo-flow.svg" /> */}
         <CenterBox>
           <ContentContainer>
             <Box>
@@ -106,7 +110,7 @@ function Header() {
                 <Logo atl="Logo" src="/logo-flow.svg" />
                 <Title>
                   Crafting digital <br />
-                  experiences.
+                  experiences
                 </Title>
                 <Tagline>
                   Flowception is the flow of perceptions about my software
