@@ -153,7 +153,7 @@ function SectionTwo() {
       <MarginTop src="/margin-section-two-top.svg" />
       <ContentContainer>
         <VideoContainer>
-          <VideoEl autoPlay loop muted playsInline>
+          <VideoEl autoPlay loop muted playsInline defaultMuted>
             <source
               src="https://flowceptionio8aa338f82a884000915b17c1e6ee133a194519-dev.s3-us-west-2.amazonaws.com/public/designer.mp4"
               type="video/mp4"

@@ -160,7 +160,7 @@ function SectionOne() {
           </BtContainer>
         </Box>
         <VideoContainer>
-          <VideoEl autoPlay loop muted playsInline>
+          <VideoEl autoPlay loop muted playsInline defaultMuted>
             <source
               src="https://flowceptionio8aa338f82a884000915b17c1e6ee133a194519-dev.s3-us-west-2.amazonaws.com/public/engineering.mp4"
               type="video/mp4"
