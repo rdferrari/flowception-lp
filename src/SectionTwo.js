@@ -175,9 +175,9 @@ function SectionTwo() {
             <br /> As a developer, I ensure that my designs are technically
             feasible within the constraints of the project.
           </Text>
-          <BtContainer>
+          {/* <BtContainer>
             <img alt="Github?" src="/bt-explore.svg" />
-          </BtContainer>
+          </BtContainer> */}
         </Box>
       </ContentContainer>
     </SectionContainer>

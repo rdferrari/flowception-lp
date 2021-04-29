@@ -154,9 +154,9 @@ function SectionThree() {
             Planning and producing digital media content - video, photo, 360
             content, maps.
           </Text>
-          <BtContainer>
+          {/* <BtContainer>
             <img alt="Github?" src="/bt-explore.svg" />
-          </BtContainer>
+          </BtContainer> */}
         </Box>
         <VideoContainer>
           <VideoEl autoPlay loop muted playsInline defaultMuted>

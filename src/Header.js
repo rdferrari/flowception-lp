@@ -103,8 +103,9 @@ function Header() {
                 Flowception is the flow of perceptions about my software
                 engineering, designer and researcher experience. Let´s chat?
               </Tagline>
-
-              <img alt="Let´s chat?" src="/bt-email.svg" />
+              <a href="mailto:rod@flowception.io">
+                <img alt="Let´s chat?" src="/bt-email.svg" />
+              </a>
             </div>
           </Box>
 
